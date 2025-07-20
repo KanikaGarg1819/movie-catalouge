@@ -12,16 +12,13 @@ function App() {
   return (
        <Router>
         <WatchlistProvider>
-
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/signup" element={<SignUp />} />
-         <Route path="/welcome" element={<Welcome />} />
         <Route path="/movie/:id" element={<MovieDetails />} />
         <Route path="/watchlist" element={<Watchlist />} />
       </Routes>
-   
     <footer style={{
   background: '#0d0d0d',  // dark background
   color: '#f2f2f2',        // soft white text
@@ -37,10 +34,8 @@ function App() {
     Made with <span style={{ color: '#e50914' }}>❤️</span> by Kanika Garg
   </p>
 </footer>
-
        </WatchlistProvider>
         </Router>
-      
   );
 }
 export default App;
