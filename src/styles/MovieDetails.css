@@ -1,0 +1,122 @@
+/* ============ Card View ============ */
+
+.movie-card {
+  background-color: #1c1c1c;
+  border-radius: 10px;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+  transition: transform 0.3s ease;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  min-height: 420px;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-poster {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.movie-card-content {
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  flex-grow: 1;
+}
+
+.movie-card-content h3 {
+  font-size: 1rem;
+  margin: 0.2rem 0;
+}
+
+.movie-card-content p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.details-link {
+  color: #00bfff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.85rem;
+  margin-top: auto;
+}
+
+.details-link:hover {
+  color: #1e90ff;
+}
+
+
+/* ============ Details Page ============ */
+
+.movie-details {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #121212;
+  color: #ffffff;
+  min-height: 100vh;
+  gap: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.movie-details img {
+  width: 300px;
+  max-width: 90vw;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  filter: brightness(0.85);
+}
+
+.details {
+  max-width: 600px;
+  background-color: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+}
+
+.details h2 {
+  font-size: 2rem;
+  color: #00fff7;
+  margin-bottom: 1rem;
+}
+
+.details p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #f0f0f0;
+}
+
+.details strong {
+  color: #ffd700;
+  font-weight: 600;
+}
+
+.watchlist-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff4c4c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.watchlist-btn:hover {
+  background-color: #d93636;
+}

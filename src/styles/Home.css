@@ -1,0 +1,145 @@
+/* src/styles/Home.css */
+
+.home-page {
+  padding: 2rem 4rem;
+  background-color: #111;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.home-page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #e50914;
+  text-align: center;
+}
+.home-page h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  margin-left: 30px;
+  color: #e50914;
+  border-color: #ccc;
+  margin-top: 100px;
+}
+
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 2.5rem;
+  justify-items: center;
+  align-items: start;
+}
+
+.no-results {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .home-page {
+    padding: 1rem;
+  }
+
+  .movie-grid {
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  }
+
+  .home-page h1 {
+    font-size: 2rem;
+  }
+}
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.filters select {
+  padding: 0.6rem 1rem;
+  background: #222;
+  color: white;
+  border: 1px solid #444;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.search-bar input {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  width: 250px;
+  border-radius: 6px 0 0 6px;
+  border: 1px solid #555;
+  background-color: #222;
+  color: white;
+}
+
+.search-bar button {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+}
+.filter-button {
+  text-align: right;
+  margin: 1rem 0;
+}
+
+.filter-button button {
+  padding: 8px 16px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Modal */
+.filter-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.filter-modal-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 90%;
+  width: 400px;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.filter-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
