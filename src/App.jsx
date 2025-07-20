@@ -10,9 +10,9 @@ import Watchlist from "./pages/Watchlist";
 
 function App() {
   return (
-     <BrowserRouter>
+       <Router>
         <WatchlistProvider>
-    <Router>
+
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -21,7 +21,7 @@ function App() {
         <Route path="/movie/:id" element={<MovieDetails />} />
         <Route path="/watchlist" element={<Watchlist />} />
       </Routes>
-    </Router>
+   
     <footer style={{
   background: '#0d0d0d',  // dark background
   color: '#f2f2f2',        // soft white text
@@ -39,7 +39,8 @@ function App() {
 </footer>
 
        </WatchlistProvider>
-       </BrowserRouter>
+        </Router>
+      
   );
 }
 export default App;
